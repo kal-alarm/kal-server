@@ -1,0 +1,5 @@
+[{"model": "kalalarm.device", "pk": 1, "fields": {"nickname": "hamsu", "uuid": "", "push_token": "", "os": "android"}},
+  {"model": "kalalarm.room", "pk": 1, "fields": {"name": "hamsu-love-room", "alarm_date": 40, "alarm_time": "08:00", "is_repeat": true}},
+  {"model": "kalalarm.deviceroomlist", "pk": 1, "fields": {"device": 1, "room": 1, "is_host": true}}]
+
+

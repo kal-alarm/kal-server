@@ -1,9 +1,9 @@
 import graphene
 
-import ingredients.schema
+import kalalarm.schema
 
 
-class Query(ingredients.schema.Query, graphene.ObjectType):
+class Query(kalalarm.schema.Query, graphene.ObjectType):
     # This class will inherit from multiple Queries
     # as we begin to add more apps to our project
     pass
