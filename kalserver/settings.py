@@ -42,6 +42,16 @@ INSTALLED_APPS = [
     'channels'
 ]
 
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("localhost", 6379)],
+        },
+        "ROUTING": "kalalarm.routing.channel_routing",
+    },
+}
+
 GRAPHENE = {
     'SCHEMA': 'kalserver.schema.schema' # Where your Graphene schema lives
 }
